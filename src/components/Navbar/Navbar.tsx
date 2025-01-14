@@ -62,10 +62,10 @@ export const Navbar = () => {
     setIsOpen(!isOpen)
   }
   return (
-    <nav>
+    <nav className='fixed top-0 left-0 bg-blue-300 w-full bg-opacity-30 backdrop-blur-md z-50'>
       <div className='flex justify-between items-center px-4 py-3 sm:px-12 sm:py-6'>
         <div>
-          <img className='w-[100px]' src={Logo} alt='logo' />
+          <img className='w-[80px]' src={Logo} alt='logo' />
         </div>
         {/* Menú Hamburguesa */}
 
@@ -128,7 +128,7 @@ export const Navbar = () => {
       </div>
       {/* Movil */}
       <div
-        className={`md:hidden absolute w-full bg-[#EB5A3C] transition-all duration-300 ${
+        className={`md:hidden absolute w-full bg-blue-300 transition-all duration-300 ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
